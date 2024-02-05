@@ -1,0 +1,73 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $light;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: $secondary;
+    line-height: 1.5;
+
+    .inp {
+        margin-top: 50px;
+        @include flex-center;
+
+        input[type='file'] {
+            color: $danger;
+        }
+
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            padding: 10px 12px;
+            cursor: pointer;
+            box-shadow: $shadow;
+            background-color: $primary;
+            border-radius: 10px;
+        }
+    }
+
+    .card {
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto 80px;
+        box-shadow: $shadow;
+        display: none;
+
+        .table-hover {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            th {
+                background-color: #f8f9fa;
+                color: #333;
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+
+
+            tbody {
+
+                tr {
+                    cursor: pointer;
+                    border-bottom: 1px solid #ddd;
+
+                    &:hover {
+                        background-color: #f1f1f1;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
