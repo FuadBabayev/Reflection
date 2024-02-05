@@ -21,7 +21,7 @@ document.getElementById('fileInput').addEventListener('change', (event) => {
         texts.forEach(text => {
             const [firstName, lastName, email, phone] = text.split(',');
             addRowToTable(firstName, lastName, email, phone);
-        });
+        })
     }
     reader.readAsText(file);
 });
